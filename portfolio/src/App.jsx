@@ -15,6 +15,7 @@ import pythonIntermediateCertPhoto from './assets/Python Intermediate.png'
 import introPythonCertPhoto from './assets/Introduction to python.png'
 import BlurText from './components/BlurText'
 import SectionReveal from './components/SectionReveal'
+import CursorTrail from './components/CursorTrail'
 
 function App() {
   const [activeSection, setActiveSection] = useState('')
@@ -45,6 +46,7 @@ function App() {
 
   return (
     <div className="app">
+      <CursorTrail />
       {/* Navigation */}
       <nav className="nav">
         <div className="container">
@@ -181,10 +183,16 @@ function App() {
               <h3 className="category-title">Magang</h3>
               <div className="timeline">
                 <TimelineItem
+                  title="Technical Writer - TelkomSigma"
+                  date="31 Juli 2026"
+                  location="Jakarta"
+                  description="Bertanggung jawab dalam pembuatan dokumentasi teknis untuk produk dan layanan TelkomSigma, termasuk dokumentasi API, user guide, technical specification, dan knowledge base. Berkolaborasi dengan tim developer dan product manager untuk memastikan dokumentasi yang akurat dan mudah dipahami."
+                />
+                <TimelineItem
                   title="Frontend Developer - Airnav Indonesia"
                   date="31 Juli 2024 - 31 Januari 2025"
                   location="Kota Tangerang"
-                  description="Bertanggung jawab dalam membangun website HAADES (Highly Accurate Aircraft Data Enhancement System), aplikasi pendukung pengelolaan data yang digunakan untuk mencatat penerbangan Overflying yang melintas di wilayah udara FIR (Flight Information Region) Jakarta dan Ujung Pandang. Output aplikasi HAADES adalah data penerbangan overflying yang digunakan sebagai bahan baku produksi (penagihan) biaya pelayanan navigasi penerbangan."
+                  description="Bertanggung jawab dalam membangun website HAADES (Highly Accurate Aircraft Data Enhancement System), aplikasi pengelolaan data untuk pencatatan penerbangan overflying di wilayah udara FIR Jakarta dan Ujung Pandang yang digunakan sebagai bahan baku produksi (penagihan) biaya pelayanan navigasi penerbangan. Selain itu juga membuat mockup website HAADES, mockup website Stream, serta mengembangkan bagian frontend untuk Website App (Aplikasi Perkantoran)."
                 />
                 <TimelineItem
                   title="Fullstack Developer - RSPPN (Rumah Sakit Pusat Pertahanan Negara)"
@@ -248,7 +256,6 @@ function App() {
                 description="Website Sistem E-Learning RSPPN — platform pembelajaran digital yang dirancang untuk mendukung program magang dan pengembangan kompetensi mahasiswa di bidang kesehatan. Website ini memfasilitasi akses materi, pengumpulan tugas, dan fitur administrasi lainnya untuk mendukung proses belajar yang lebih terstruktur dan efisien."
                 tags={['PHP', 'Laravel 11', 'MySQL']}
                 image={elearningPhoto}
-                githubLink="#"
               />
             </SectionReveal>
             <SectionReveal delay={0.3}>
@@ -297,7 +304,7 @@ function App() {
             <SectionReveal delay={0.2}>
               <SkillCategory
                 title="Frontend"
-                skills={['HTML/CSS', 'JavaScript', 'React', 'Vue.js', 'Nuxt.js', 'Tailwind CSS', 'Kotlin', 'Java']}
+                skills={['HTML/CSS', 'JavaScript', 'React', 'Vue.js', 'Nuxt.js', 'Tailwind CSS', 'Bootstrap', 'Kotlin', 'Java']}
               />
             </SectionReveal>
             <SectionReveal delay={0.3}>
@@ -399,9 +406,9 @@ function App() {
           <div className="footer-content">
             <p>&copy; 2024 Rifqah Aulia Salsabilla. All rights reserved.</p>
             <div className="social-links">
-              <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="mailto:your@email.com">Email</a>
+              <a href="https://github.com/rifqahaulia" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/rifqah-aulia-salsabilla-324344336/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="mailto:rifqahauliasalsabilla25@gmail.com">Email</a>
             </div>
           </div>
         </div>
