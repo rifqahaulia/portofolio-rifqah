@@ -39,8 +39,6 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-
-
   const scrollToSection = (id) => {
     const element = document.getElementById(id)
     element?.scrollIntoView({ behavior: 'smooth' })
@@ -252,7 +250,6 @@ function App() {
             <h2 className="section-title">Project</h2>
           </SectionReveal>
           <div className="projects-grid">
-            {/* Original cards */}
             <SectionReveal delay={0.2}>
               <ProjectCard
                 title="Website E-Learning RSPPN"
@@ -293,37 +290,6 @@ function App() {
                 image={sisInfoPhoto}
               />
             </SectionReveal>
-            {/* Duplicated cards for infinite loop */}
-            <ProjectCard
-              title="Website E-Learning RSPPN"
-              description="Website Sistem E-Learning RSPPN — platform pembelajaran digital yang dirancang untuk mendukung program magang dan pengembangan kompetensi mahasiswa di bidang kesehatan. Website ini memfasilitasi akses materi, pengumpulan tugas, dan fitur administrasi lainnya untuk mendukung proses belajar yang lebih terstruktur dan efisien."
-              tags={['PHP', 'Laravel 11', 'MySQL']}
-              image={elearningPhoto}
-            />
-            <ProjectCard
-              title="CareFull Prototype App"
-              description="Carefull adalah aplikasi seluler kesehatan yang bertujuan untuk memudahkan pengguna mendaftar pemeriksaan kesehatan & memesan obat tanpa harus datang lebih dulu. Aplikasi ini berfokus pada fungsi tampilan aplikasi untuk memesan pemeriksaan kesehatan, pemesanan obat, pembayaran, dan profil. Tersedia juga buku panduan untuk membantu pengguna yang kesulitan menggunakan aplikasi ini."
-              tags={['UI/UX', 'Figma']}
-              image={carefullPhoto}
-            />
-            <ProjectCard
-              title="Website HAADES"
-              description="HAADES atau Highly Accurate Aircraft Data Enhancement System merupakan aplikasi pendukung pengelolaan data yang digunakan untuk mencatat penerbangan Overflying yang melintas di wilayah udara FIR (Flight Information Region) Jakarta dan Ujung Pandang."
-              tags={['Nuxt.js', 'Vue.js', 'Tailwind CSS']}
-              image={haadesPhoto}
-            />
-            <ProjectCard
-              title="Website Kitty Corner"
-              description="Website pet shop bertema kucing yang menyediakan berbagai layanan seperti cat salon, cat hotel, cat shop, dan adopsi kucing. Website ini juga dilengkapi dengan fasilitas cafe dan cat playground, memberikan pengalaman unik bagi pelanggan yang ingin makan dan menghabiskan waktu bersama kucing mereka."
-              tags={['React.js', 'Axios', 'Bootstrap']}
-              image={kittyPhoto}
-            />
-            <ProjectCard
-              title="Website Sistem Informasi RSPPN"
-              description="Website ini dirancang dengan pendekatan user-friendly, menampilkan menu navigasi utama seperti Beranda, Komkordik, SOP, Penelitian, Agenda, dan Fasilitas. Fitur utama yang saya sediakan adalah tombol pendaftaran magang/PKL, yang langsung mengarahkan mahasiswa ke Google Form resmi dari Komkordik."
-              tags={['HTML', 'CSS', 'JavaScript']}
-              image={sisInfoPhoto}
-            />
           </div>
         </div>
       </section>
@@ -370,7 +336,6 @@ function App() {
             <h2 className="section-title">Sertifikat</h2>
           </SectionReveal>
           <div className="certificates-grid">
-            {/* Original cards */}
             <SectionReveal delay={0.2}>
               <CertificateCard
                 title="Vue.js Certification"
@@ -431,55 +396,6 @@ function App() {
                 image={introPythonCertPhoto}
               />
             </SectionReveal>
-            {/* Duplicated cards for infinite loop */}
-            <CertificateCard
-              title="Vue.js Certification"
-              issuer="Programmer Zaman Now"
-              date="Juli 2025"
-              credentialId="cert_j6qsm4xm"
-              description="Sertifikasi yang memvalidasi pemahaman mendalam tentang Vue.js framework, termasuk komponen, routing, state management, dan best practices dalam pengembangan aplikasi web modern menggunakan Vue.js."
-              image={vueJsCertPhoto}
-            />
-            <CertificateCard
-              title="Guide to Learn SQL with AI at DQLab"
-              issuer="DQLab"
-              date="Mei 2025"
-              credentialId="#DQLABAI003DJCLVI"
-              description="Sertifikasi yang menunjukkan kemampuan dalam mempelajari SQL dengan bantuan AI, mencakup query optimization, database management, dan penggunaan AI tools untuk meningkatkan efisiensi dalam bekerja dengan database."
-              image={dqlabSqlCertPhoto}
-            />
-            <CertificateCard
-              title="Introduction to Data Science with Python"
-              issuer="DQLab"
-              date="Mei 2025"
-              credentialId="#DQLABINTP1RCNEGL"
-              description="Sertifikasi yang memvalidasi pemahaman dasar tentang Data Science menggunakan Python, mencakup data analysis, visualization, pandas, numpy, dan fundamental concepts dalam pengolahan dan analisis data."
-              image={dqlabPythonCertPhoto}
-            />
-            <CertificateCard
-              title="Huawei Talent Academy AI Course"
-              issuer="Huawei"
-              date="Mei 2024"
-              credentialId="EBG20240510001364"
-              description="Sertifikasi dari Huawei Talent Academy yang memvalidasi pemahaman tentang Artificial Intelligence, mencakup machine learning fundamentals, AI applications, dan teknologi AI terkini dari Huawei."
-              image={huaweiCertPhoto}
-            />
-            <CertificateCard
-              title="Python Intermediate"
-              issuer="Sololearn"
-              date="Mei 2024"
-              credentialId="CC-KACISVHA"
-              description="Sertifikasi tingkat intermediate dalam Python programming dari Sololearn, mencakup advanced concepts seperti OOP, decorators, generators, file handling, dan best practices dalam Python development."
-              image={pythonIntermediateCertPhoto}
-            />
-            <CertificateCard
-              title="Introduction to Python"
-              issuer="Sololearn"
-              date="Maret 2024"
-              credentialId="CC-C4EZEUNQ"
-              description="Sertifikasi fundamental Python programming dari Sololearn, mencakup basic syntax, data types, control structures, functions, dan foundational concepts untuk memulai programming dengan Python."
-              image={introPythonCertPhoto}
-            />
           </div>
         </div>
       </section>

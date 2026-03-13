@@ -590,30 +590,10 @@
 .projects-grid {
   display: flex;
   gap: 2rem;
-  overflow: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   padding: 2rem 0;
-  position: relative;
-}
-
-.projects-grid:hover {
-  animation-play-state: paused;
-}
-
-.projects-grid > * {
-  animation: scroll-left 30s linear infinite;
-}
-
-.projects-grid:hover > * {
-  animation-play-state: paused;
-}
-
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  scroll-snap-type: x mandatory;
 }
 
 .project-card {
@@ -779,30 +759,10 @@
 .certificates-grid {
   display: flex;
   gap: 2rem;
-  overflow: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
   padding: 2rem 0;
-  position: relative;
-}
-
-.certificates-grid:hover {
-  animation-play-state: paused;
-}
-
-.certificates-grid > * {
-  animation: scroll-left 30s linear infinite;
-}
-
-.certificates-grid:hover > * {
-  animation-play-state: paused;
-}
-
-@keyframes scroll-left-certs {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+  scroll-snap-type: x mandatory;
 }
 
 .certificate-card {
